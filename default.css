@@ -165,6 +165,20 @@ iframe {
         font-weight: bold;
 }
 
+.strike{
+	color: red;
+	text-decoration: line-through;
+	background-color:white;
+        font-weight: bold;
+}
+
+.add{
+	color: green;
+	text-decoration: underline;
+	background-color:white;
+        font-weight: bold;
+}
+
 .definition::before {
 	content: attr(id) ":";
         font-weight: bold;
