@@ -1,0 +1,191 @@
+body {
+	background-color: #dddddd;
+	font-family: 'roboto light', helvetica, arial, sans-serif;
+	font-size: 11pt;
+	margin: 0;
+}
+
+h1,h2,h3 {
+	font-weight: normal;
+	text-align: center;
+}
+
+h1,h2,h3 {
+	margin: 0.5em;
+}
+
+h1 {
+	font-size: 16pt;
+}
+
+h2 {
+	font-size: 14pt;
+}
+
+h3 {
+	font-size: 12pt;
+}
+
+p {
+	margin-left: 3%;
+	pargin-right: 3%;
+	text-align: left;
+}
+
+ul {text-align:left;}
+
+input{font-size:18pt;}
+
+img {
+	width:85%;
+	border:10px;
+	border:3px solid #777777;
+}
+
+img.icon{width: 20%}
+
+#banner {
+	margin: 1.1rem 0;
+	text-align: center;
+	color: steelblue;
+	font-size: 1.4rem;
+        font-weight: bold;
+}
+
+.page {
+	max-width: 728px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content {
+	margin: 0pt;
+	width: 100%;
+}
+
+.watermark{
+    position: fixed;
+    color: rgba(0, 0, 0, 0.2);
+
+    font-size: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    transform: rotate(-45deg);
+
+    user-select: none;
+}
+
+.RP::before {
+	content: "RP" attr(id);
+}
+.RP {
+	font-style: italic;
+	padding-bottom:25px;
+}
+
+.Standard::before {
+	content: "S" attr(id);
+}
+
+.Standard {
+	font-style: normal;
+	padding-bottom:25px;
+}
+
+iframe {
+	width: 100%;
+	display: block;
+	margin:auto;
+	border:0;
+	border-spacing:0px;
+}
+
+.section {
+	margin: 40px 0;
+	padding: 30px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+	/* -moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3); */
+	box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+}
+
+.subsection {
+	margin: 40px 0;
+	padding: 30px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+	/* -moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3); */
+	box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+}
+
+.footer {
+	margin-top:10pt; 
+	border:0;
+	border-spacing:0px;
+	color:black;
+	font-family:arial,sans-serif;
+	font-size:10pt;
+	text-align:center;
+}
+
+.headercontainer{
+	background-color: #296aa5;
+	height: 157px;
+}
+
+.header{
+	margin-top:10pt; 
+	margin-bottom:10pt; 
+	border:0;
+	border-spacing:0px;
+	color:black;
+	font-family:arial,sans-serif;
+	font-size:10pt;
+	text-align:center;
+}
+
+.header.img{
+	width: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	border-spacing: 0;
+}
+
+.black {
+	color: black;
+	background-color:white;
+        font-weight: bold;
+}
+
+.red {
+	color: red;
+	background-color:white;
+        font-weight: bold;
+}
+
+.definition::before {
+	content: attr(id) ":";
+        font-weight: bold;
+}
+
+em { 
+       font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px) { /* max content width */
+	.section {
+		margin: 3mm;
+		padding: 2mm;
+	}
+}
+
+/* Smartphones (detection heuristic, not guaranteed). */ 
+@media screen and (max-device-width: 420px) and (max-device-height: 840px) {
+	.section {
+		margin: 3mm;
+		padding: 2mm;
+	}
+}
