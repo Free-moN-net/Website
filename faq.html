@@ -246,11 +246,15 @@ Second, Peco, being a British company, builds track for British n-scale, which i
 <div class="FAQ">
 	<div class="question"> Why doesn't the standard allow 14 AWG (American Wire Gauge) wire on the track and accessory buses? See <a href="standard.html#3.3.1">S3.3.1</a> and <a href="standard.html#3.4.1">S3.4.1</a>
 </div>
-<div class="answer"> Goal of the 12 AWG standard is to maximize the distance over which the DCC signal is reliable. 14 AWG is less conductive than 12 AWG and thus results in shorter distances. (Some specific values would be good here.) 
-</div>
-<div class="answer"> (from Paul) 12 gauge may be overkill in some ways, but part of the reason it was selected in the first place was it can reduce the number of boosters needed on the layout without compromising the ability to detect shorts.
+<div class="answer"> <p>12 AWG specified in the standards may be overkill in some ways, but part of the reason it was selected in the first place was it can reduce the number of boosters needed on the layout without compromising the ability to detect shorts.  Wire is still cheaper than another booster.</p>
 
-Wire is still cheaper than another booster.
+	<p>For the technical explanation, in order to reliably detect a short at the end of a booster district, the resistance of the wire needs to be kept low enough that we don't have a voltage drop of more than 0.5 volts at the end of the power district when we have a 5 amp short on the track (using the so called quarter test can induce this).</p>
+
+	<p>Using Ohms Law, this means the total resistance from the booster to the end of the district needs to be under 0.5 volts/5 amps = .1 ohm.</p>
+
+	<p>12 AWG wire has a resistance of .002 Ohms per foot and 14AWG wire has a resistance of .003 Ohms per foot.  For 14 AWG wire, the maximum distances is .1 ohm/ .003 ohm/foot = 33.33 feet.  For 12 AWG wire, the maximum distance is .1 ohm/.002 ohm/foot = 50 feet.  This means a single booster placed in the center of a district can safely power up to 100 feet of track with 12 gauge wire, but only 66.66 feet of track using 14 gauge wire.  In practice, we try to make our booster districts slightly smaller than the maximum limits to accommodate other sources of resistance (connectors, feeder wire, etc) in the circuit.</p>
+
+	<p>On a large layout, this difference can significantly increase the cost of powering the layout.  For example, if we have 1000 feet of track using 12 AWG wire for the bus, we need a minimum of 10 boosters to adequately power the track.  With 14 AWG wire for the bus, we need a minimum of 15 boosters to safely power the same amount of track.</p>
 </div>
 </div>
 
@@ -292,8 +296,7 @@ The following drawing, provided by Bob Schrempp provides a nice graphical explan
 	<div class="question"> Why are 30-amp Anderson PowerPole connectors required <a href="standard.html#3.3.3">S3.3.3</a>? I thought that the DCC booster only put out around 5 amps?
 
 </div>
-<div class="answer"> The Anderson PowerPole connector will actually accommodate three different sizes of terminal - 15A, 30A, and 45</div>
-<div class="answer"> The reason we’re using the 30A is that it’s the one sized for 12ga-14ga wire. The 45A is for 10ga and larger, and the 15A is for 16ga and smaller wire. So the 30A is used because it fits the wire size used in our busses, not because we need 30A of capacity.
+<div class="answer"> The Anderson PowerPole connector will actually accommodate three different sizes of terminal - 15A, 30A, and 45.  The reason we’re using the 30A is that it’s the one sized for 12ga-14ga wire. The 45A is for 10ga and larger, and the 15A is for 16ga and smaller wire. So the 30A is used because it fits the wire size used in our buses, not because we need 30A of capacity.
 </div>
 </div>
 		</div>
@@ -332,7 +335,7 @@ Owners of large modules (e.g., the 50’ mentioned above) are asked to consider 
 	What type of wire should I use for my throttle network cables?
 	</div>
 	<div class="answer">
-	The standards don't specify which type of cable you use, but the prefered cable is flat 6 conductor data cable, sometimes refered to as satin silver cable.  Do not use CAT5 or CAT6 Ethernet cables for your throttle network, as the twisting in these cables can cause communication issues with the protocols used for DCC systems.
+	The standards don't specify which type of cable you use, but the preferred cable is flat 6 conductor data cable, sometimes referred to as satin silver cable.  Do not use CAT5 or CAT6 Ethernet cables for your throttle network, as the twisting in these cables can cause communication issues with the protocols used for DCC systems.
 	</div>
 </div>
 		</div>
