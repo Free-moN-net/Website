@@ -93,6 +93,33 @@ img.icon{width: 20%}
 	padding-bottom:25px;
 }
 
+.FAQ {
+	margin: 40px 0;
+	padding: 30px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+	/* -moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3); */
+	box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+}
+
+.question::before {
+	content: "Q:" attr(id);
+}
+
+.question {
+	font-style: normal;
+	padding-bottom:25px;
+}
+
+.answer::before {
+	content: "A:" attr(id);
+}
+
+.answer {
+	font-style: normal;
+	padding-bottom:25px;
+}
+
 iframe {
 	width: 100%;
 	display: block;
