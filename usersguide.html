@@ -486,8 +486,24 @@
                         <a href="https://groups.google.com/g/free-mon">Google Group</a>.</p>
                 </div>
 
+                <div id="LCC" class="subsection">
+                    <h3>4.2 Layout Command Control (LCC)</h3>
+
+                    <p><strong>Layout Command Control (LCC)</strong> is an optional layout control bus that can be
+                        added for signaling, turnout control, detection, and other layout-automation functions.
+                        LCC can coexist with Free-moN's required DCC/LocoNet layout control and is typically used
+                        for accessory and logic functions rather than train propulsion.</p>
+
+                    <p>Builders who add LCC to a module should keep the implementation modular and self-contained:
+                        pass the LCC bus through the module, provide clear and durable connectors at each endplate,
+                        and document any module-specific behavior for show coordinators.</p>
+
+                    <p>LCC is optional and not required for module interoperability.  Modules without LCC remain
+                        fully compatible in Free-moN layouts.</p>
+                </div>
+
                 <div id="DoublTrack" class="subsection">
-                    <h3>4.2 Double Track Endplates</h3>
+                    <h3>4.3 Double Track Endplates</h3>
 
                     <p>A module may have double-track endplates, with two tracks crossing the endplate at a
                         center-to-center spacing of <strong>1.125 inches (1 1/8 inches)</strong>.  Double track
@@ -502,7 +518,7 @@
                 </div>
 
                 <div id="Grades" class="subsection">
-                    <h3>4.3 Grades</h3>
+                    <h3>4.4 Grades</h3>
 
                     <p>Grades add visual interest and operational challenge to a layout, but they must be carefully
                         implemented to remain compatible with other modules.  A few key rules:</p>
@@ -520,7 +536,7 @@
                 </div>
 
                 <div id="Staging" class="subsection">
-                    <h3>4.4 Staging &amp; Yards</h3>
+                    <h3>4.5 Staging &amp; Yards</h3>
 
                     <p>Staging modules and yard modules are valuable contributions to a Free-moN layout because
                         they provide a place for operators to stage trains before entering the main layout and
@@ -541,7 +557,7 @@
                 </div>
 
                 <div id="Lighting" class="subsection">
-                    <h3>4.5 Module Lighting</h3>
+                    <h3>4.6 Module Lighting</h3>
 
                     <p>Structure lighting, interior lighting, street lamps, and other illuminated details
                         dramatically improve the visual impact of a module, especially at indoor public shows
